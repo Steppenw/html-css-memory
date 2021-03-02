@@ -11,6 +11,12 @@ body {
 .center {
   width: 860px;
   margin: 30px auto;
+  text-align: center;
+}
+
+header {
+  color: white;
+  margin-bottom: 30px;
 }
 
 .row {
@@ -30,7 +36,6 @@ body {
   height: 250px;
   margin-right: 20px;
   position: relative;
-  text-align: center;
 }
 
 .row .card:last-child {
@@ -58,7 +63,7 @@ body {
   display: none; 
 }
 
-.card .uncovered img {
+.card .uncovered img, .card .special img {
   width: 100%;
 }
 
@@ -70,14 +75,26 @@ body {
   display: block;
 }
 
-.card .descr {
+.card .descr, .card .spec-descr {
   position: absolute;
   bottom: 0;
   width: 100%;
   font-size: 25px;
+}
+
+.card .descr {
   display: none;
+}
+
+.card .spec-descr {
+  display: block;
 }
 
 .card:hover .descr {
   display: block;
+}
+
+footer span {
+  color: black;
+  font-weight: bold;
 }
