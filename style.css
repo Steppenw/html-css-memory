@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+body {
+  background-color: aqua;
+}
+
 .center {
   width: 860px;
   margin: 30px auto;
@@ -11,6 +15,7 @@
 
 .row {
   width: 100%;
+  margin-bottom: 30px;
 }
 
 .row::after {
@@ -39,14 +44,6 @@
   background-size: contain;
 }
 
-.card .uncovered {
-  display: none; 
-}
-
-.card .uncovered img {
-  width: 100%;
-}
-
 .card .border {
   position: absolute;
   top: 0;
@@ -54,6 +51,15 @@
   height: 100%;
   border: 1px solid lightgrey;
   border-radius: 10px;
+  background-color: white;
+}
+
+.card .uncovered {
+  display: none; 
+}
+
+.card .uncovered img {
+  width: 100%;
 }
 
 .card:hover .hidden {
